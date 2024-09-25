@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Linux Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+           Linux Journey
+        </div>
+        <div class="nav-right">
+            <ul id="myList"><img src="images/unitedFlag.png">Languages<b class="caret"></b></ul>
+            <li class="myListItem"><img src="images/unitedFlag.png">English</li>
+            <li class="myListItem"><img src="images/French.png">French</li>
+            <li class="myListItem"><img src="images/German.png">German</li>
+            <li class="myListItem"><img src="images/Greek.png">Greek</li>
+            <li class="myListItem"><img src="images/Hebrew.png">Hebrew</li>
+         
+        </div>
+    </div>
+    <div class="center">
+      <img src="images/hero-image.png" alt="logo">
+      <h1>Learn the ways of Linux-fu, for free.</h1>
+    </div>
+
+    <div class="text">
+        <p>Get updates about new courses and lessons!</p>
+    </div>
+    <div class="inputDiv">
+        <input placeholder="Email Address">
+        <button class="btn">Subscribe</button>
+    </div>
+    <h3>Grasshopper</h3>
+    <div class="cardsDiv">
+        <div class="cards">
+            <img src="images/card-1-image.png">
+            <h4>Getting Started</h4>
+            <p>What is Linux? Get started with choosing a distribution and installation.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-2-image.png">
+            <h4>Command Line</h4>
+            <p>Learn the fundamentals of the command line, navigating files, directories and more.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-3-image.png">
+            <h4>Text-Fu</h4>
+            <p>Learn basic text manipulation and navigation.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-4-image.png">
+            <h4>Advanced Text-Fu</h4>
+            <p>Navigate text like a Linux spider monkey with vim and emacs.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-5-image.png">
+            <h4>User Management</h4>
+            <p>Learn about user roles and management.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-6-image.png">
+            <h4>Permissions</h4>
+            <p>Learn about permission levels and modifying permissions.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-7-image.png">
+            <h4>Processes</h4>
+            <p>Learn about the running processes on the system.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-8-image.png">
+            <h4>Packages</h4>
+            <p>Learn all about the dpkg, apt-get, rpm and yum package management tools.</p>
+        </div>
+    </div>
+<!--------------------------------------------------------------------------------->
+
+<h3>Journeyman</h3>
+    <div class="cardsDiv">
+        <div class="cards">
+            <img src="images/card-9-image.png">
+            <h4>Devices</h4>
+            <p>Learn about Linux devices and how they interact with the kernel and user space.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-10-image.png">
+            <h4>The Filesystem</h4>
+            <p>Learn about the Linux filesystem, the different types of filesystems, partitioning and more.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-11-image.png">
+            <h4>Boot the System</h4>
+            <p>Learn about the stages of the Linux boot process.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-12-image.png">
+            <h4>Kernel</h4>
+            <p>The most important part of the Linux system, learn about how it works and how to configure it.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-13-image.png">
+            <h4>Init</h4>
+            <p>Learn about the different init systems, SysV, Upstart and systemd.</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-14-image.png">
+            <h4>Process Utilization</h4>
+            <p>Learn resource monitoring with top, load averages, iostat and more!</p>
+        </div>
+
+        <div class="cards">
+            <img src="images/card-15-image.png">
+            <h4>Logging</h4>
+            <p>Learn about system logs and the /var/log directory.</p>
+        </div>
+</div>
+       
+<!------------------>
+    <div class="footer">
+    
+            <div class="col-md-4">
+            <h5>Subscribe</h5>
+            <p>
+                Get updates about new courses and lessons!
+                <a href="/subscribe">Subscribe</a>
+            </p>
+            </div>
+            
+            <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>The knowledge gained here today was powered by the open-source community.</p>
+            <p><a href="https://github.com/cindyq/linuxjourney">Contribute and Collaborate</a></p>
+            </div>
+            
+            <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>See a bug? Any complaints? Just want to send a note?
+            <a href="mailto:contact@linuxjourney.com">Let us know</a></p>
+            </div>
+        
+        
+    </div>
+<script>
+  // Initially hide all <li> elements
+    const listItems = document.getElementsByClassName("myListItem");
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].style.display = "none";
+        }
+
+        // Select the <ul> element by its ID
+        const ulElement = document.getElementById("myList");
+
+        // Add a click event listener to the <ul> element
+        ulElement.addEventListener("click", function () {
+            // Toggle display of each <li> element
+            for (let i = 0; i < listItems.length; i++) {
+                if (listItems[i].style.display === "none") {
+                    listItems[i].style.display = "block"; // Show the item
+                } else {
+                    listItems[i].style.display = "none"; // Hide the item
+                }
+            }
+        });
+</script>
+
+</body>
+</html>
